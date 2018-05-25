@@ -1,0 +1,66 @@
+.flower{
+    position: fixed;
+}
+
+.flower-yellow{
+    display: none;
+}
+
+.vertical{
+    width: 140px;
+}
+
+.horozontal{
+    max-width: 340px;
+}
+
+.angle{
+    max-width: 240px;
+}
+
+.flower-center{
+    top: 37%;
+    right: 45%;
+    max-width: 250px;
+    z-index: 10000;
+}
+
+.flower-top{
+    top: 13%;
+    right: 48%;
+}
+
+.flower-top-right{
+    top: 21%;
+    right: 38%;
+}
+
+.flower-right{
+    top: 42%;
+    right: 31%;
+}
+
+.flower-bottom-right{
+    top: 54%;
+    right: 37%;
+}
+
+.flower-bottom{
+    top: 55%;
+    right: 48%;
+}
+
+.flower-bottom-left{
+    top: 54%;
+    right: 53%;
+}
+
+.flower-left{
+    top: 42%;
+    right: 54%;
+}
+
+.flower-top-left{
+    top: 23%;
+    right: 53%;
+}
