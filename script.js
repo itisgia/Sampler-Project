@@ -12,31 +12,6 @@ function playAudio(arrayNo){
     yellowPetals[arrayNo].style.display = "block";
     audioArray[arrayNo].play();
 }
-plainPetals[0].addEventListener('mouseover', function(){playAudio(0);}, false);
-plainPetals[0].addEventListener('mouseout', function(){stopAudio(0);}, false);
-
-plainPetals[1].addEventListener('mouseover', function(){playAudio(1);}, false);
-plainPetals[1].addEventListener('mouseout', function(){stopAudio(1);}, false);
-
-plainPetals[2].addEventListener('mouseover', function(){playAudio(2);}, false);
-plainPetals[2].addEventListener('mouseout', function(){stopAudio(2);}, false);
-
-plainPetals[3].addEventListener('mouseover', function(){playAudio(3);}, false);
-plainPetals[3].addEventListener('mouseout', function(){stopAudio(3);}, false);
-
-plainPetals[4].addEventListener('mouseover', function(){playAudio(4);}, false);
-plainPetals[4].addEventListener('mouseout', function(){stopAudio(4);}, false);
-
-plainPetals[5].addEventListener('mouseover', function(){playAudio(5);}, false);
-plainPetals[5].addEventListener('mouseout', function(){stopAudio(5);}, false);
-
-plainPetals[6].addEventListener('mouseover', function(){playAudio(6);}, false);
-plainPetals[6].addEventListener('mouseout', function(){stopAudio(6);}, false);
-
-plainPetals[7].addEventListener('mouseover', function(){playAudio(7);}, false);
-plainPetals[7].addEventListener('mouseout', function(){stopAudio(7);}, false);
-//
-//plainPetals[3].addEventListener('mouseover', ('mouseover', function(){playAudio(3);}, false);
 
 function stopAudio(arrayNo){
     setTimeout(function(){
@@ -44,7 +19,6 @@ function stopAudio(arrayNo){
         audioArray[arrayNo].pause();
     }, 11000);
 }
-// END test
 
 // Store audio elements into an array
 var audioArray = [];
@@ -57,6 +31,8 @@ function createAudioEl(){
         audioObj.setAttribute('loop', 'loop');
         console.log(audioObj);
         audioArray.push(audioObj);
+        clickEventListener(i);
+
     }
 }
 createAudioEl();
@@ -64,6 +40,25 @@ console.log(audioArray);
 
 
 
+//play audios
+function audioPlay(arrayNo){
+      yellowPetals[arrayNo].style.display = "block";
+      audioArray[arrayNo].play();
+}
+
+// pause audios with setTimeout function
+function audioPause(arrayNo){
+  setTimeout(function(){
+    yellowPetals[arrayNo].style.display = "none";
+    audioArray[arrayNo].pause();
+  }, 11000);
+}
+
+//addEventListener loop
+function clickEventListener(Nun){
+    plainPetals[Nun].addEventListener('mouseover', function(){audioPlay(Nun)}, false);
+    plainPetals[Nun].addEventListener('mouseover', function(){audioPause(Nun)}, false);
+}
+
+
 })(); //END IIFE
-
-

@@ -1,3 +1,21 @@
+body {
+  text-align: center;
+  background-color: #F7EFF0;
+}
+
+.h1 {
+  font-family: 'Yellowtail', cursive;
+  font-size: 75px;
+  color: #013341;
+  margin:0;
+}
+
+.description {
+  font-family: 'Julius Sans One', sans-serif;
+  color: #0197A7;
+  margin: 2px 0;
+}
+
 .flower{
     position: fixed;
 }
