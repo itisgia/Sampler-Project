@@ -25,7 +25,7 @@ var audioArray = [];
 
 // Create audio elements with a loop and store them into audioArray
 function createAudioEl(){
-    for  (var i = 0; i < plainPetals.length; i++){
+    for  (var i = 0; i < yellowPetals.length; i++){
         var audioObj = new Audio();
         audioObj.src = 'media/audio'+i+'.wav';
         audioObj.setAttribute('loop', 'loop');
