@@ -8,11 +8,10 @@ console.dir(yellowPetals);
 
 // Testing the colour change onclick event
 function changeColour(){
-    console.log('working');
+    // console.log('working');
     yellowPetals[0].style.display = "block";
 };
 
-plainPetals[0].addEventListener('mouseover', changeColour, false);
 // END test
 
 // Store audio elements into an array
@@ -29,9 +28,4 @@ function createAudioEl(){
 }
 createAudioEl();
 console.log(audioArray);
-
-
-
 })(); //END IIFE
-
-
