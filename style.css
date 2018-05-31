@@ -82,3 +82,29 @@ body {
     top: 23%;
     right: 53%;
 }
+
+@media only screen and (min-width: 3600px) {
+        .vertical{
+        width: 280px;
+    }
+
+    .horozontal{
+        max-width: 680px;
+    }
+
+    .angle{
+        max-width: 480px;
+    }
+    
+    .flower-center{
+    max-width: 500px;
+    }
+    
+    .h1{
+        font-size: 100px;
+    }
+    
+    body{
+        font-size: 28px;
+    }
+}
