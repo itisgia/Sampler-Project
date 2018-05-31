@@ -58,6 +58,8 @@ function audioPause(arrayNo){
 function clickEventListener(Nun){
     plainPetals[Nun].addEventListener('mouseover', function(){audioPlay(Nun)}, false);
     plainPetals[Nun].addEventListener('mouseover', function(){audioPause(Nun)}, false);
+    plainPetals[Nun].addEventListener('click', function(){audioPlay(Nun)}, false);
+    plainPetals[Nun].addEventListener('click', function(){audioPause(Nun)}, false);
 }
 
 
