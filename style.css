@@ -83,7 +83,7 @@ body {
     right: 53%;
 }
 
-@media only screen and (min-width: 3600px) {
+@media only screen and (min-width: 2000px) {
         .vertical{
         width: 280px;
     }
